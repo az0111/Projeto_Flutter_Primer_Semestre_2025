@@ -28,8 +28,17 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
+                /*
                 Icon(Icons.hexagon, size: 80, color: Colors.black),
                 SizedBox(height: 10),
+                
+                */
+                Image(
+                  image: AssetImage("lib/image/logo.png"),
+                  width: 100,
+                  height: 100,
+                ),
+
                 Text(
                   "EVENTOON",
                   style: TextStyle(
@@ -138,6 +147,8 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
+
+                   
                     onPressed: () {
                       UserModel user = UserModel(
                         email: _emailController.text,

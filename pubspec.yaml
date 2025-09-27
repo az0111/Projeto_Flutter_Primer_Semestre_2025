@@ -19,3 +19,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+# pubspec.yaml
+  assets:
+    - lib/image/logo.png  
